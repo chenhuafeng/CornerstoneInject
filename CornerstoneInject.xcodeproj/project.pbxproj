@@ -13,7 +13,7 @@
 
 /* Begin PBXFileReference section */
 		F643BCAA21E384A0004E7F32 /* CornerstoneInject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CornerstoneInject.h; sourceTree = "<group>"; };
-		F6EF4B6F21E3680500698377 /* ZSubscriptionLicensingPolicy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSubscriptionLicensingPolicy.h; sourceTree = "<group>"; };
+		F643BCAB21E38CFC004E7F32 /* ZStandardLicensingPolicy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZStandardLicensingPolicy.h; sourceTree = "<group>"; };
 		F6EF4B7021E3681700698377 /* ZLicensingPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLicensingPolicy.h; sourceTree = "<group>"; };
 		F6FCAE2D21E34343000D2720 /* libCornerstoneInject.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libCornerstoneInject.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6FCAE3221E34343000D2720 /* CornerstoneInject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CornerstoneInject.m; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 			isa = PBXGroup;
 			children = (
 				F6EF4B7021E3681700698377 /* ZLicensingPolicy.h */,
-				F6EF4B6F21E3680500698377 /* ZSubscriptionLicensingPolicy.h */,
+				F643BCAB21E38CFC004E7F32 /* ZStandardLicensingPolicy.h */,
 			);
 			path = CornerstoneHeaders;
 			sourceTree = "<group>";

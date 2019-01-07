@@ -8,22 +8,17 @@
 
 #import "CornerstoneInject.h"
 #import "JRSwizzle.h"
-#import "ZSubscriptionLicensingPolicy.h"
+#import "ZStandardLicensingPolicy.h"
 
 @implementation NSObject (CornerstoneInject)
 
 + (void)load {
-    Class class = NSClassFromString(@"ZSubscriptionLicensingPolicy");
-    [class jr_swizzleMethod:@selector(apply) withMethod:@selector(hf_apply) error:NULL];
-    [class jr_swizzleMethod:@selector(licensingKey) withMethod:@selector(hf_licensingKey) error:NULL];
+    Class class = NSClassFromString(@"ZStandardLicensingPolicy");
+    [class jr_swizzleMethod:@selector(applyWithUserInterface:) withMethod:@selector(hf_applyWithUserInterface:) error:NULL];
 }
 
-- (BOOL)hf_apply {
+- (BOOL)hf_applyWithUserInterface:(BOOL)arg1 {
     return YES;
-}
-
-- (NSData *)hf_licensingKey {
-    return [NSData data];
 }
 
 @end
