@@ -20,7 +20,7 @@
 + (id)sharedInstance;
 @property(retain, nonatomic) NSURL *baseURL; // @synthesize baseURL;
 @property(readonly, nonatomic) NSURLSession *session; // @synthesize session;
-- (void).cxx_destruct;
+
 - (id)unregisterLicense:(id)arg1 email:(id)arg2 completionHandler:(CDUnknownBlockType)arg3;
 - (id)checkIfSubscriptionIsValid:(id)arg1 completionHandler:(CDUnknownBlockType)arg2;
 - (id)saveOrder:(id)arg1 withCompletionHandler:(CDUnknownBlockType)arg2;
