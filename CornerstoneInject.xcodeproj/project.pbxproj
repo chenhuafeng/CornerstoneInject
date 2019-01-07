@@ -7,17 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F6EF4B7821E3711A00698377 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = F6EF4B7621E3711A00698377 /* fishhook.c */; };
 		F6FCAE3321E34343000D2720 /* CornerstoneInject.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FCAE3221E34343000D2720 /* CornerstoneInject.m */; };
 		F6FCAE4021E34B91000D2720 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FCAE3E21E34B91000D2720 /* JRSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F643BCAA21E384A0004E7F32 /* CornerstoneInject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CornerstoneInject.h; sourceTree = "<group>"; };
 		F6EF4B6F21E3680500698377 /* ZSubscriptionLicensingPolicy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSubscriptionLicensingPolicy.h; sourceTree = "<group>"; };
 		F6EF4B7021E3681700698377 /* ZLicensingPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLicensingPolicy.h; sourceTree = "<group>"; };
-		F6EF4B7221E36EF500698377 /* ZLicenseServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLicenseServer.h; sourceTree = "<group>"; };
-		F6EF4B7621E3711A00698377 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
-		F6EF4B7721E3711A00698377 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		F6FCAE2D21E34343000D2720 /* libCornerstoneInject.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libCornerstoneInject.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6FCAE3221E34343000D2720 /* CornerstoneInject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CornerstoneInject.m; sourceTree = "<group>"; };
 		F6FCAE3D21E34B91000D2720 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
@@ -38,7 +35,6 @@
 		F6EF4B7321E3708400698377 /* CornerstoneHeaders */ = {
 			isa = PBXGroup;
 			children = (
-				F6EF4B7221E36EF500698377 /* ZLicenseServer.h */,
 				F6EF4B7021E3681700698377 /* ZLicensingPolicy.h */,
 				F6EF4B6F21E3680500698377 /* ZSubscriptionLicensingPolicy.h */,
 			);
@@ -52,15 +48,6 @@
 				F6FCAE3E21E34B91000D2720 /* JRSwizzle.m */,
 			);
 			path = JRSwizzle;
-			sourceTree = "<group>";
-		};
-		F6EF4B7521E3711A00698377 /* fishhook */ = {
-			isa = PBXGroup;
-			children = (
-				F6EF4B7721E3711A00698377 /* fishhook.h */,
-				F6EF4B7621E3711A00698377 /* fishhook.c */,
-			);
-			path = fishhook;
 			sourceTree = "<group>";
 		};
 		F6FCAE2421E34343000D2720 = {
@@ -82,9 +69,9 @@
 		F6FCAE2F21E34343000D2720 /* CornerstoneInject */ = {
 			isa = PBXGroup;
 			children = (
-				F6EF4B7521E3711A00698377 /* fishhook */,
 				F6EF4B7421E370B900698377 /* JRSwizzle */,
 				F6EF4B7321E3708400698377 /* CornerstoneHeaders */,
+				F643BCAA21E384A0004E7F32 /* CornerstoneInject.h */,
 				F6FCAE3221E34343000D2720 /* CornerstoneInject.m */,
 			);
 			path = CornerstoneInject;
@@ -157,7 +144,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6FCAE4021E34B91000D2720 /* JRSwizzle.m in Sources */,
-				F6EF4B7821E3711A00698377 /* fishhook.c in Sources */,
 				F6FCAE3321E34343000D2720 /* CornerstoneInject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
