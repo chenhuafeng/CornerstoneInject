@@ -1,0 +1,3 @@
+#!/bin/sh
+workingPath=$(cd `dirname $0` && pwd)
+DYLD_INSERT_LIBRARIES=${workingPath}/libCornerstoneInject.dylib ${workingPath}/Cornerstone.app/Contents/MacOS/Cornerstone
